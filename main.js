@@ -82,7 +82,7 @@ async function searchPokemon(){
 }
 searchBtn.addEventListener("click",()=>searchPokemon())
 async function loadPokedex() {
-    for (let i=1;i<2;i++){
+    for (let i=1;i<51;i++){
         const pokemon = await fetchPokemonData(i);
         displayPokemon(pokemon);  
     }    
